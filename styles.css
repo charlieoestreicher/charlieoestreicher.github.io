@@ -5,22 +5,29 @@ This came from branch Sunday
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
+
 .header-wrap {
   justify-content: space-between;
-  background-color: #f0f0f0; /* Change this to your desired background color */
+  position: fixed;
+  background-color: gray; /* Change this to your desired background color */
   padding: 10px;
   display: flex;
   align-items: center;
+  height: 50px;
 }
 .header-inner {
   display: flex;
   align-items: center;
 }
 #profilepic {
-  width: 60px; /* Adjust the width and height to your preference */
-  height: 60px;
+  width: 50px; /* Adjust the width and height to your preference */
+  height: 50px;
   border-radius: 50%; /* Make the image circular */
 }
 #headername {
@@ -39,6 +46,43 @@ body {
 }
 #ulnavs li:hover {
   color: #ff6600; /* Change this to your desired hover color */
+}
+
+.home-content {
+  background-image: url(images/techback.jpg);
+  background-size: cover; /* Make sure the image covers the entire background */
+  background-position: center; /* Center the image horizontally and vertically */
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.home-content-inner {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.home-content-socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 0px;
+  background-color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.home-content-social {
+  width: 1rem;
+  margin: 0px;
+}
+
+.home-content-social:hover {
+  outline-color: blue;
 }
 
 .button {
