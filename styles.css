@@ -5,68 +5,42 @@ This came from branch Sunday
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
-.home-content {
-  padding-top: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  background-image: url("images/techback.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.home-content-inner {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  align-content: center;
-}
-
-#profilepic {
-  border-radius: 50%;
-  height: 70px;
-}
-#headername {
-  font-family: Impact;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center; /* Vertically center the content */
+.header-wrap {
   justify-content: space-between;
-  background-color: gray;
+  background-color: #f0f0f0; /* Change this to your desired background color */
   padding: 10px;
-}
-
-.header-content {
-  display: flex; /* Fill available space and push the name to the center */
-  text-align: center; /* Center the name horizontally */
-}
-
-#headername {
-  font-size: 24px; /* Adjust the font size as needed */
-  margin-left: 10px;
   display: flex;
-  vertical-align: center;
-}
-
-#ulnavs {
   align-items: center;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+}
+#profilepic {
+  width: 60px; /* Adjust the width and height to your preference */
+  height: 60px;
+  border-radius: 50%; /* Make the image circular */
+}
+#headername {
+  font-size: 20px; /* Adjust the font size to your preference */
+  font-weight: bold;
+  margin-left: 10px; /* Add some spacing between the profile picture and name */
+}
+#ulnavs {
   list-style: none;
   display: flex;
 }
-
 #ulnavs li {
-  margin-right: 20px;
+  margin-left: 20px; /* Add some spacing between navigation options */
+  text-transform: uppercase; /* Convert text to uppercase */
+  cursor: pointer; /* Change the cursor to indicate it's clickable */
+}
+#ulnavs li:hover {
+  color: #ff6600; /* Change this to your desired hover color */
 }
 
-/* CSS */
 .button {
   align-items: center;
   appearance: none;
