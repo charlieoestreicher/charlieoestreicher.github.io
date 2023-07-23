@@ -4,26 +4,51 @@ This came from branch Sunday
 
 body {
   margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
-.header-wrap {
-  justify-content: space-between;
-  position: fixed;
-  background-color: gray; /* Change this to your desired background color */
-  padding: 10px;
+.footer {
+  background: black;
+  color: white;
+}
+
+.footer-inner {
   display: flex;
   align-items: center;
-  height: 50px;
+  justify-content: space-between;
+  width: 92%;
+  margin: auto;
+}
+.footer-icon img {
+  width: 1rem;
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-social-links {
+  display: flex;
+  flex-direction: row;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: gray;
 }
 .header-inner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 #profilepic {
   width: 50px; /* Adjust the width and height to your preference */
@@ -38,10 +63,13 @@ body {
 #ulnavs {
   list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
 }
 #ulnavs li {
-  margin-left: 20px; /* Add some spacing between navigation options */
   text-transform: uppercase; /* Convert text to uppercase */
+  margin-left: 20px;
   cursor: pointer; /* Change the cursor to indicate it's clickable */
 }
 #ulnavs li:hover {
@@ -57,6 +85,7 @@ body {
   display: flex;
   flex-direction: row;
   position: relative;
+  height: 100vh;
 }
 
 .home-content-inner {
@@ -64,25 +93,18 @@ body {
   margin-right: auto;
   text-align: center;
 }
-
 .home-content-socials {
+  position: absolute;
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-right: 0px;
-  background-color: white;
-  border-radius: 4px;
-  box-sizing: border-box;
 }
 
-.home-content-social {
-  width: 1rem;
-  margin: 0px;
-}
-
-.home-content-social:hover {
-  outline-color: blue;
+.home-content-social img {
+  width: 1.2rem;
+  padding: 0.2rem;
 }
 
 .button {

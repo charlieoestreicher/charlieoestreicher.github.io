@@ -7,46 +7,47 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header-wrap">
+    <header class="header">
       <div class="header-inner">
-        <div>
-          <img src="images/profpic.jpeg" alt="" id="profilepic" />
+        <div class="profile">
+          <div>
+            <img src="images/profpic.jpeg" alt="" id="profilepic" />
+          </div>
+          <div>
+            <span id="headername"> Charlie&nbsp;Oestreicher </span>
+          </div>
         </div>
-        <div>
-          <span id="headername"> Charlie&nbsp;Oestreicher </span>
-        </div>
+        <nav>
+          <ul id="ulnavs">
+            <li>HOME</li>
+
+            <li>ABOUT</li>
+
+            <li>PROJECTS</li>
+
+            <li>CONTACT</li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul id="ulnavs">
-          <li>HOME</li>
-
-          <li>ABOUT</li>
-
-          <li>PROJECTS</li>
-
-          <li>CONTACTS</li>
-        </ul>
-      </nav>
     </header>
     <section class="home-content">
       <div class="home-content-socials">
         <div class="home-content-social">
           <a
             href="https://www.linkedin.com/in/charlieoestreicher/"
+            class="icon-link"
             target="_blank"
           >
-            <img
-              src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg"
-              alt=""
-            />
+            <img src="images/darklinked.jpeg" alt="" />
           </a>
         </div>
         <div class="home-content-social">
-          <a href="https://github.com/charlieoestreicher" target="_blank">
-            <img
-              src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg"
-              alt=""
-            />
+          <a
+            href="https://github.com/charlieoestreicher"
+            class="icon-link"
+            target="_blank"
+          >
+            <img src="images/darkgit.jpeg" alt="" />
           </a>
         </div>
       </div>
@@ -110,5 +111,36 @@
       accusamus qui ipsa iure distinctio rem, magnam a, dolore et esse dolores.
       Itaque.
     </p>
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-name-descript">
+          <h2>Charlie Oestreicher</h2>
+          <p>Please hire me</p>
+        </div>
+        <div class="footer-socials">
+          <div><span>SOCIALS</span></div>
+          <div class="footer-social-links">
+            <div class="footer-icon">
+              <a
+                href="https://www.linkedin.com/in/charlieoestreicher/"
+                class="icon-link"
+                target="_blank"
+              >
+                <img src="images/lightlinked.jpeg" alt="" />
+              </a>
+            </div>
+            <div class="footer-icon">
+              <a
+                href="https://github.com/charlieoestreicher"
+                class="icon-link"
+                target="_blank"
+              >
+                <img src="images/lightgit.jpeg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
