@@ -1,0 +1,28 @@
+/* Arrow container style */
+.scroll-prompt {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pulse 2s infinite;
+}
+
+/* Arrow icon style */
+.scroll-prompt svg {
+  fill: #fff; /* Set the arrow color */
+  width: 24px;
+  height: 24px;
+}
+
+/* Pulsing animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
