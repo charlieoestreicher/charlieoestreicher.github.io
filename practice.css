@@ -1,0 +1,5 @@
+.container img {
+  width: 150px;
+  background-image: linear-gradient(white, blue);
+  border-radius: 10px;
+}
