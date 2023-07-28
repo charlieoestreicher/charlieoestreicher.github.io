@@ -78,14 +78,10 @@ body {
   font-size: 15px;
   max-width: 60%;
 }
-HTML CSSResult Skip Results Iframe EDIT ON body {
-  background-color: #000;
-  overflow: hidden;
-}
 
 .scroll-down {
   position: absolute;
-  left: 50%;
+  left: 10%;
   bottom: 20px;
   display: block;
   text-align: center;
@@ -95,56 +91,29 @@ HTML CSSResult Skip Results Iframe EDIT ON body {
   text-shadow: 0;
   width: 13px;
   height: 13px;
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
+  border-bottom: solid rgba(255, 255, 255, 1);
+  border-right: solid rgba(255, 255, 255, 1);
   z-index: 9;
   left: 50%;
-  -webkit-transform: translate(-50%, 0%) rotate(45deg);
-  -moz-transform: translate(-50%, 0%) rotate(45deg);
   transform: translate(-50%, 0%) rotate(45deg);
-  -webkit-animation: fade_move_down 4s ease-in-out infinite;
-  -moz-animation: fade_move_down 4s ease-in-out infinite;
   animation: fade_move_down 4s ease-in-out infinite;
+  transition: 1;
 }
 
-/*animated scroll arrow animation*/
-@-webkit-keyframes fade_move_down {
-  0% {
-    -webkit-transform: translate(0, -10px) rotate(45deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translate(0, 10px) rotate(45deg);
-    opacity: 0;
-  }
-}
-@-moz-keyframes fade_move_down {
-  0% {
-    -moz-transform: translate(0, -10px) rotate(45deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: translate(0, 10px) rotate(45deg);
-    opacity: 0;
-  }
-}
 @keyframes fade_move_down {
   0% {
     transform: translate(0, -10px) rotate(45deg);
-    opacity: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
   }
   50% {
-    opacity: 1;
+    border-right: 1px solid rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
   }
   100% {
     transform: translate(0, 10px) rotate(45deg);
-    opacity: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
   }
 }
 
