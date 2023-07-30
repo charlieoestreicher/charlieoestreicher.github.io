@@ -54,22 +54,6 @@ window.addEventListener("scroll", handleScroll);
 // Call the handleScroll function on page load to set the initial opacity
 handleScroll();
 
-document
-  .getElementById("contact-content-sayhello-button")
-  .addEventListener("click", function () {
-    var hiddenForm = document.getElementById("contact-content-hidden-form");
-    var fadeButton = document.getElementById("contact-content-sayhello-button");
-    fadeButton.classList.add("hidden");
-    if (!hiddenForm.classList.contains("fade-in")) {
-      // If the paragraph is hidden, show it with a fade-in effect
-      hiddenForm.classList.remove("hidden");
-      hiddenForm.classList.add("fade-in");
-    }
-    setTimeout(function () {
-      fadeButton.remove();
-    });
-  });
-
 // Function to handle the click event on the scroll arrow
 function scrollToSection() {
   // Replace "section2" with the ID of the section you want to scroll to
@@ -87,3 +71,10 @@ function scrollToSection() {
 
 // Add a click event listener to the scroll arrow
 scrollArrow.addEventListener("click", scrollToSection);
+
+document.getElementById("resumeButton").addEventListener("click", function () {
+  // Replace 'path_to_your_pdf.pdf' with the actual path to your PDF file
+  var pdfUrl = "CO_Resume.pdf";
+  // Open the PDF in a new tab
+  window.open(pdfUrl, "_blank");
+});
