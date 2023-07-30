@@ -24,17 +24,20 @@
   </head>
   <body>
     <ul class="topribbon" id="navbar">
-      <li>
+      <li class="topribels" id="topribels">
         <a href="#home"><span class="number">00.</span>home</a>
       </li>
-      <li>
+      <li id="topribels">
         <a href="#about"><span class="number">01.</span>about</a>
       </li>
-      <li>
+      <li id="topribels">
         <a href="#projects"><span class="number">02.</span>projects</a>
       </li>
-      <li>
+      <li id="topribels">
         <a href="#contact"><span class="number">03.</span>contact</a>
+      </li>
+      <li id="topribels">
+        <button id="resumeButton">Resume</button>
       </li>
     </ul>
     <section class="home-content" id="home">
@@ -57,10 +60,16 @@
     <section class="about-content" id="about">
       <div class="about-content-wrapper">
         <div class="about-content-text-wrapper">
-          <h5 class="about-content-title">
-            <span class="number">01.</span> About Me
-          </h5>
-
+          <div class="about-content-title">
+            <div class="just-text">
+              <h5 class="content-title">
+                <span class="number">01.</span>About&nbsp;Me
+              </h5>
+            </div>
+            <div class="just-line">
+              <hr class="horizontal-line" />
+            </div>
+          </div>
           <p class="about-content-paragraph-one">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores
             incidunt odio fugit labore, nostrum rerum harum! Eaque blanditiis
@@ -97,8 +106,8 @@
     <section class="projects-content" id="projects">
       <div class="projects-content-wrapper">
         <div class="projects-content-text-wrapper">
-          <h5 class="projects-content-title">
-            <span class="number">02.</span> projects
+          <h5 class="content-title">
+            <span class="number">02.</span> Projects
           </h5>
           <div>
             <span>project 1</span>
@@ -113,20 +122,55 @@
       </div>
     </section>
     <section class="contact-content" id="contact">
-      <h5>
-        <span class="number">03.</span>
-        contact
-      </h5>
-      <button><h2>Say hello</h2></button>
+      <div>
+        <h5 class="content-title"><span class="number">03.</span> Contact</h5>
+      </div>
+      <div class="contact-content-form-container">
+        <div class="contact-content-form-item">
+          <input type="text" placeholder="First Name" />
+        </div>
+        <div class="contact-content-form-item">
+          <input type="text" placeholder="Last Name" />
+        </div>
+        <div class="contact-content-form-item" id="email">
+          <input type="text" placeholder="Email" />
+        </div>
+        <div class="contact-content-form-item" id="subject">
+          <input type="text" placeholder="Subject" />
+        </div>
+        <div class="contact-content-form-item" id="message">
+          <textarea placeholder="Message"></textarea>
+        </div>
+        <div class="contact-content-form-item" id="button">
+          <button>Submit</button>
+        </div>
+      </div>
     </section>
     <div class="bottomleft">
-      <div class="social-icon">
+      <div class="social-icon" id="linkedin">
         <a
           href="https://www.linkedin.com/in/charlieoestreicher/"
           class="icon-link"
           target="_blank"
         >
-          <img src="images/lightlinked.jpeg" alt="" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-linkedin"
+          >
+            <title>LinkedIn</title>
+            <path
+              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+            ></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
         </a>
       </div>
       <div class="social-icon" id="git">
@@ -135,16 +179,31 @@
           class="icon-link"
           target="_blank"
         >
-          <img src="images/lightgit.jpeg" alt="" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-github"
+          >
+            <title>GitHub</title>
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            ></path>
+          </svg>
         </a>
       </div>
     </div>
     <div class="bottomright">
-      <div>
+      <div class>
         <a
           href="mailto:charles.oestreicher@duke.edu"
           target="_blank"
-          class="email"
+          class="emaillink"
           >charles.oestreicher@duke.edu</a
         >
       </div>
