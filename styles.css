@@ -54,6 +54,37 @@ button {
   margin: 0;
   color: var(--fontwhite);
 }
+
+#home {
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tile-odd {
+  transform: translateY(50px) translateX(500px) rotate(-5deg) translateZ(0);
+  transition: 1.25s;
+  opacity: 0;
+}
+.tile-even {
+  transform: translateY(50px) translateX(-500px) rotate(5deg) translateZ(0);
+  transition: 1.25s;
+  opacity: 0;
+}
+.inViewOdd {
+  opacity: 1;
+  transform: translateY(0px) translateX(0px) rotate(0deg) translateZ(0);
+}
+.inViewEven {
+  opacity: 1;
+  transform: translateY(0px) translateX(0px) rotate(0deg) translateZ(0);
+}
 /*--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------*/

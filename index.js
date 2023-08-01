@@ -79,18 +79,32 @@ document.getElementById("resumeButton").addEventListener("click", function () {
   window.open(pdfUrl, "_blank");
 });
 
-let elementsArray = document.querySelectorAll(".tile");
-console.log(elementsArray);
-window.addEventListener("scroll", fadeIn);
-function fadeIn() {
-  for (var i = 0; i < elementsArray.length; i++) {
-    var elem = elementsArray[i];
+let elementsArrayOdd = document.querySelectorAll(".tile-odd");
+window.addEventListener("scroll", fadeInOdd);
+function fadeInOdd() {
+  for (var i = 0; i < elementsArrayOdd.length; i++) {
+    var elem = elementsArrayOdd[i];
     var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
     if (distInView < 0) {
-      elem.classList.add("inView");
+      elem.classList.add("inViewOdd");
     } else {
-      elem.classList.remove("inView");
+      elem.classList.remove("inViewOdd");
     }
   }
 }
-fadeIn();
+fadeInOdd();
+
+let elementsArrayEven = document.querySelectorAll(".tile-even");
+window.addEventListener("scroll", fadeInEven);
+function fadeInEven() {
+  for (var i = 0; i < elementsArrayEven.length; i++) {
+    var elem = elementsArrayEven[i];
+    var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+    if (distInView < 0) {
+      elem.classList.add("inViewEven");
+    } else {
+      elem.classList.remove("inViewEven");
+    }
+  }
+}
+fadeInEven();
