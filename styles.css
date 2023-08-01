@@ -390,7 +390,7 @@ textarea {
   padding: 10px;
   border-radius: 8px;
   font-size: 14px;
-  color: var(--fontcolor);
+  color: var(--fontgray);
   transition: background-color 0.5s;
   resize: none;
 }

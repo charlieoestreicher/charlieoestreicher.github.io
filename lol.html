@@ -1,24 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        display: flex;
-        flex-direction: center;
-        justify-content: center;
-        align-items: center;
-      }
-      img {
-        width: 2200px;
-        border-radius: 50%;
-        border: 10px solid black;
-      }
-    </style>
-    <title>Document</title>
+    <link rel="stylesheet" href="lol.css" />
   </head>
   <body>
-    <img src="square.jpeg" alt="" />
+    <section>
+      <div class="tile bottom-right"></div>
+      <div class="tile bottom-right"></div>
+      <div class="tile bottom-right"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile">
+      <section class="contact-content" id="contact">
+        <div class="contact-content-header">
+          <div class="just-left-line"><hr class="left-horizontal" /></div>
+          <div>
+            <h5 class="content-title">
+              <span class="number">03.</span>Contact
+            </h5>
+          </div>
+          <div class="just-right-line"><hr class="right-horizontal" /></div>
+        </div>
+        <form
+          class="form"
+          action="https://formspree.io/f/mwkdvoyr"
+          method="POST"
+        >
+          <div class="contact-content-form-container">
+            <div class="contact-content-form-item">
+              <input
+                type="text"
+                placeholder="First Name"
+                name="fname"
+                required
+              />
+            </div>
+            <div class="contact-content-form-item">
+              <input
+                type="text"
+                placeholder="Last Name"
+                name="lname"
+                required
+              />
+            </div>
+            <div class="contact-content-form-item" id="email" name="email">
+              <input type="text" placeholder="Email" name="email" required />
+            </div>
+            <div class="contact-content-form-item" id="subject" name="subject">
+              <input type="text" placeholder="Subject" name="subject" />
+            </div>
+            <div class="contact-content-form-item" id="message" name="message">
+              <textarea placeholder="Message" name="message">Message</textarea>
+            </div>
+            <div id="button">
+              <div class="contact-content-button-wrapper">
+                <div><button class="submit-button">Submit</button></div>
+                <div class="contact-content-sign-off">
+                  <span class="contact-content-built"
+                    >Built By Charlie Oestreicher 2023</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+  </div>
   </body>
+  <script src="lol.js"></script>
 </html>
